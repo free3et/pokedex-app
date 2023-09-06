@@ -1,0 +1,43 @@
+div#back-to-top-anchor {
+    min-height: 0;
+}
+
+li.MuiImageListItem-root.MuiImageListItem-quilted img.MuiImageListItem-img {
+    object-fit: contain;
+}
+
+.MuiCardContent-root.css-1bdaytv-MuiCardContent-root:last-child {
+    padding-bottom: 5px;
+}
+
+.css-6od3lo-MuiChip-label {
+    font-size: 16px;
+}
+
+.css-b9xjnq-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.css-14toj0d-MuiResponsiveChart-container > svg {
+    margin-top: -40px;
+}
+
+@media screen and (max-width: 520px) {
+    nav.MuiPagination-root.MuiPagination-text.css-mqw3f1-MuiPagination-root {
+        margin-top: 0;
+    }
+
+    .css-1agg2cp-MuiResponsiveChart-container > svg .css-b9xjnq-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel {
+        font-weight: 400;
+        font-size: 14px;
+
+        text-anchor: initial;
+    }
+
+    svg.css-iyxbj7-MuiChartsSurface-root {
+        position: absolute;
+        top: -60px;
+        overflow: visible;
+    }
+}

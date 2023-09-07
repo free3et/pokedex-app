@@ -33,8 +33,15 @@ export const PokemonChipData: React.FC<PokemonChipDataProps> = ({
       <Chip
         icon={icon}
         label={label}
+        size="medium"
         color={color}
-        sx={{ margin: isMobile ? 1 : 2, p: 1, fontSize: "14px" }}
+        sx={{
+          margin: isMobile ? 1 : 2,
+          p: 1,
+          "& .MuiChip-label": {
+            fontSize: "16px",
+          },
+        }}
       />
     </Box>
   );

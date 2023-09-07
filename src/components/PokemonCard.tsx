@@ -54,7 +54,7 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemonName }) => {
                 sx={{
                   m: 0.5,
                   "& .MuiChip-label": {
-                    fontSize: "14px",
+                    fontSize: "16px",
                   },
                 }}
                 key={index}

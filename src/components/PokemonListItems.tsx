@@ -27,20 +27,20 @@ export const PokemonListItems: React.FC<PokemonsListProps> = ({
 }) => {
   return (
     <>
-      <Grid container spacing={4} justifyContent="center" m={2}>
-        <Button
-          variant="contained"
-          color="info"
-          onClick={clearSearchResults}
-          size="large"
-          sx={{
-            maxWidth: "200px",
-            m: "0 auto 1rem",
-          }}
-        >
-          Go back
-        </Button>
-      </Grid>
+      <Button
+        variant="contained"
+        color="info"
+        onClick={clearSearchResults}
+        size="large"
+        sx={{
+          display: "block",
+          maxWidth: "200px",
+          m: "0 auto 1.5rem",
+        }}
+      >
+        Go back
+      </Button>
+
       <Grid container spacing={4}>
         {Object.entries(filteredPokemons).map(([pokemonName]) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={pokemonName}>

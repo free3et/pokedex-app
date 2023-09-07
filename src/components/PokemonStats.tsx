@@ -39,7 +39,15 @@ export const PokemonStats: React.FC<{ stats: PokemonStatsProps[] }> = ({
         ]}
         width={isMobile ? 350 : 600}
         height={isMobile ? 300 : 380}
-        sx={{ writingMode: "vertical-lr", ml: isMobile ? "-50px" : "-15px" }}
+        sx={{
+          writingMode: "vertical-lr",
+          ml: isMobile ? "-50px" : "-15px",
+          "&: .MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel":
+            {
+              fontWeight: 700,
+              fontSize: "16px",
+            },
+        }}
       />
     </Box>
   );

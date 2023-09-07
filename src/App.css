@@ -6,14 +6,6 @@ li.MuiImageListItem-root.MuiImageListItem-quilted img.MuiImageListItem-img {
     object-fit: contain;
 }
 
-.MuiCardContent-root.css-1bdaytv-MuiCardContent-root:last-child {
-    padding-bottom: 5px;
-}
-
-.css-6od3lo-MuiChip-label {
-    font-size: 16px;
-}
-
 .css-b9xjnq-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel {
     font-weight: 700;
     font-size: 16px;
@@ -31,7 +23,6 @@ li.MuiImageListItem-root.MuiImageListItem-quilted img.MuiImageListItem-img {
     .css-1agg2cp-MuiResponsiveChart-container > svg .css-b9xjnq-MuiChartsAxis-root.MuiChartsAxis-bottom .MuiChartsAxis-tickLabel {
         font-weight: 400;
         font-size: 14px;
-
         text-anchor: initial;
     }
 

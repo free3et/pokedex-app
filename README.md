@@ -1,6 +1,8 @@
 # Pokémon Web App
 
 Welcome to the Pokémon web application! This application allows you to explore various Pokémon and filter them by type. You can also search for specific Pokémon by name.
+Live demo [https://free3et.github.io/pokedex-app](https://free3et.github.io/pokedex-app)
+
 ![image](https://github.com/free3et/pokedex/assets/19286076/2fd6fcaf-5905-4af4-9560-e4cea64ec06d)
 
 ## Features
@@ -15,6 +17,7 @@ Welcome to the Pokémon web application! This application allows you to explore 
 
 - React: A JavaScript library for building user interfaces [https://react.dev/](https://react.dev/).
 - Redux Toolkit: A set of tools for simplifying Redux development [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/).
+- Typescript: strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 - Material-UI: A popular UI framework for React applications [https://mui.com/](https://mui.com/) .
 - React Router: For handling client-side routing [https://reactrouter.com/en/main](https://reactrouter.com/en/main).
 - Vite: is a build tool that aims to provide a faster and leaner development experience for modern web projects [https://vitejs.dev/](https://vitejs.dev/)
@@ -38,7 +41,7 @@ npm install
 3. Start the development server:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-4. Open your web browser and visit [http://localhost:5173/pokedex/](http://localhost:5173/pokedex/) to access the Pokémon web app.
+4. Open your web browser and visit [http://localhost:5173/pokedex-app/](http://localhost:5173/pokedex-app/) to access the Pokémon web app.

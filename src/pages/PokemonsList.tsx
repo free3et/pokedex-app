@@ -16,6 +16,7 @@ import {
   Button,
   Stack,
   Alert,
+  useMediaQuery,
 } from "@mui/material";
 import { RadioButtons } from "../components/RadioButtons";
 import { PokemonSelectTypes } from "../components/PokemonSelectTypes";
@@ -69,6 +70,7 @@ export const PokemonsList = () => {
     {}
   );
   const [touched, setTouched] = useState<boolean>(false);
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   const pokemonData = useAppSelector((state) => state.pokemons.pokemons);
   const dispatch = useDispatch();
@@ -165,7 +167,7 @@ export const PokemonsList = () => {
               alignItems="center"
             >
               <Grid item>
-                <Navigation>
+                <Navigation sx={{ mt: isMobile ? 2 : 0 }}>
                   {data?.results && data?.results.length > 0 && (
                     <PaginationComponent
                       pageCount={pagesCount}
@@ -177,7 +179,7 @@ export const PokemonsList = () => {
                 </Navigation>
               </Grid>
               <Grid item>
-                <Navigation>
+                <Navigation sx={{ height: isMobile ? "45px" : "35px" }}>
                   <RadioButtons
                     onHandlePerPageChange={handlePerPageChange}
                     selectedTypes={selectedTypes}

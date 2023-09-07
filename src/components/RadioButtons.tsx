@@ -19,7 +19,11 @@ export const RadioButtons: React.FC<RadioButtonsProps> = ({
     <FormControl>
       <FormLabel
         id="demo-row-radio-buttons-group-label"
-        sx={{ lineHeight: 0.7, fontSize: ".9rem", mt: "7px" }}
+        sx={{
+          lineHeight: 0.7,
+          fontSize: ".9rem",
+          mt: "7px",
+        }}
       >
         Pokemons per page
       </FormLabel>

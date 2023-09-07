@@ -18,7 +18,7 @@ export const PaginationComponent: React.FC<PaginationComponentProps> = ({
     event: React.ChangeEvent<unknown>,
     value: number
   ) => {
-    event.preventDefault()
+    event.preventDefault();
     onPageChange(value);
   };
 
@@ -35,7 +35,7 @@ export const PaginationComponent: React.FC<PaginationComponentProps> = ({
         sx={{
           display: "flex",
           justifyContent: "center",
-          mt: isMobile ? 2 : 0,
+          mt: 0,
           "& .MuiPagination-ul": {
             alignItems: "center",
           },

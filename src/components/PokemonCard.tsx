@@ -51,7 +51,12 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemonName }) => {
                 size="medium"
                 label={pokemonType?.type?.name}
                 color="warning"
-                sx={{ m: 0.5 }}
+                sx={{
+                  m: 0.5,
+                  "& .MuiChip-label": {
+                    fontSize: "14px",
+                  },
+                }}
                 key={index}
               />
             )
@@ -74,6 +79,9 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemonName }) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          "&:last-child": {
+            paddingBottom: "5px",
+          },
         }}
       >
         <CardActions>
